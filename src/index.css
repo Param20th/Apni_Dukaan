@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', 'Noto Sans Devanagari', sans-serif;
+    --font-hindi: 'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #19241d;
+    background-color: #faf8f5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-hindi {
+    font-family: var(--font-hindi);
+  }
+}
+
+/* Tasteful subtle 3D text and card elevations */
+.text-dimensional {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 3px 6px rgba(24, 54, 38, 0.12);
+}
+
+.text-dimensional-dark {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35), 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-dairy-sm {
+  box-shadow: 0 2px 8px -1px rgba(24, 54, 38, 0.06), 0 1px 3px -1px rgba(24, 54, 38, 0.04);
+}
+
+.shadow-dairy-md {
+  box-shadow: 0 8px 24px -4px rgba(24, 54, 38, 0.08), 0 2px 6px -2px rgba(24, 54, 38, 0.04);
+}
+
+.shadow-dairy-lg {
+  box-shadow: 0 16px 36px -6px rgba(24, 54, 38, 0.12), 0 6px 14px -3px rgba(24, 54, 38, 0.06);
+}
+
+.shadow-dairy-3d {
+  box-shadow: 
+    0 1px 1px rgba(24, 54, 38, 0.08),
+    0 2px 2px rgba(24, 54, 38, 0.08),
+    0 4px 4px rgba(24, 54, 38, 0.08),
+    0 8px 16px rgba(24, 54, 38, 0.08),
+    0 16px 32px rgba(24, 54, 38, 0.06);
+}
+
+/* Glass & textured accents */
+.glass-dairy {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-dairy-dark {
+  background: rgba(21, 51, 34, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Milk wave / smooth curve styling */
+.dairy-curve {
+  border-radius: 28px;
+}
+
+@keyframes float-subtle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(0.5deg); }
+}
+
+.animate-float-subtle {
+  animation: float-subtle 6s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.08); opacity: 0.4; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+

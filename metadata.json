@@ -1,0 +1,6 @@
+{
+  "name": "Apni Dukaan – अपने घर की अपनी दुकान",
+  "description": "Apni Dukaan connects customers with their nearby dairy and household store through a simple digital ordering experience. आपकी रोज़मर्रा की ज़रूरतें, आपकी अपनी नज़दीकी दुकान से।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
