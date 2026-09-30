@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://apnidukaanbilaspur.site/sitemap.xml
